@@ -1,13 +1,19 @@
 "use strict";
-let sales = 123456789;
-let is_published = true;
-let course = 'TypeScript';
-let level;
-function render(document) {
-    console.log(document);
+let employee = {
+    id: 1,
+    name: 'Mosh',
+    retire: (date) => {
+        console.log(date);
+    }
+};
+function kgToLbs(weight) {
+    if (typeof weight === 'number') {
+        return weight * 2.2;
+    }
+    else {
+        return parseInt(weight) * 2.2;
+    }
 }
-let numbers = [1, 2, 3];
-let user = [1, 'Mosh'];
-let mySize = 2;
-console.log(mySize);
+kgToLbs(10);
+kgToLbs('10kg');
 //# sourceMappingURL=index.js.map
